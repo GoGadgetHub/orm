@@ -11,9 +11,9 @@ type Schema struct {
 	Name       string
 	Fields     []*Field
 	FieldNames []string
-	filedMap   map[string]*Field
+	FiledMap   map[string]*Field
 }
 
 func (s *Schema) GetField(name string) *Field {
-	return s.filedMap[name]
+	return s.FiledMap[name]
 }
